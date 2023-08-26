@@ -1,0 +1,145 @@
+:root {
+  --mainColor: #eaeaea;
+  --secondaryColor: #fff;
+
+  --borderColor: #c1c1c1;
+
+  --mainText: black;
+  --secondaryText: #4b5156;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: var(--mainColor);
+  box-sizing: border-box;
+  color: #555555;
+}
+
+h1 {
+  font-weight: 620;
+}
+
+p,
+li,
+input,
+button {
+  font-weight: 500;
+  /* color: red; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.header {
+  margin-top: 20px;
+  background-color: var(--secondaryColor);
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header .isi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.showcase {
+  margin-top: 50px;
+  background-color: var(--secondaryColor);
+  border-radius: 10px;
+  box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+}
+
+.three {
+  display: flex;
+  border-bottom: 2px solid var(--borderColor);
+  padding-bottom: 8px;
+}
+
+.three > div {
+  height: 15px;
+  width: 15px;
+  background: #333;
+  border-radius: 50%;
+}
+
+.three > div:nth-child(1) {
+  background: red;
+  margin-right: 8px;
+}
+
+.three > div:nth-child(2) {
+  background: orange;
+  margin-right: 8px;
+}
+
+.three > div:nth-child(3) {
+  background: green;
+}
+
+.showcase .showcase-header {
+  margin: 20px 0;
+}
+
+.showcase .showcase-header h1 {
+  margin-bottom: 10px;
+}
+
+.showcase .showcase-content li {
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid var(--borderColor);
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.showcase-content button {
+  position: absolute;
+  right: 15px;
+  top: 7px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 1px solid var(--borderColor);
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--borderColor);
+  outline: none;
+}
+
+input[type="submit"] {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+
+input[type="submit"]:hover,
+.showcase-content button:hover {
+  opacity: 0.9;
+  border-color: #333;
+}
+
+@media (max-width: 576px) {
+  .showcase .showcase-header {
+    text-align: center;
+  }
+}
